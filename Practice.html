@@ -440,5 +440,105 @@ in order to prepare himself to give one important three-minute speech.
         </tr>
     </tfoot>
 </table>
+
+<!-- FORMS -->
+<form action="https:www.example.org/login.php">
+  <p>
+    Username: 
+    <input type="text" name="username" size="15" maxlength="30">
+  </p>
+</form>
+<hr>
+<form action="http://www.example.org/login.php">
+    <p>Username:
+        <input type="text" name="username" size="15" maxlength="30">
+    </p>
+        <p>Password:
+            <input type="text" name="password" size="15" maxlength="30">
+        </p>
+    </form>
+<hr>
+
+    <h1>Text Area:</h1>
+
+    <form action="http:www.example.org/comments.php">
+    <p>What did you think of this gig</p>
+    <textarea name="comments" cols="20" rows="4">Enter your comments...
+    </textarea>
+    </form>
+    <hr>
+
+    <h1>Radio Buttons:</h1>
+
+    <form action="http:www.example.org/profile.php">
+        <p>Please select your favorite genre: 
+            <br>
+            <input type="radio" name="genere" value="rock" 
+            checked="checked"/>Rock
+            <input type="radio" name="genre" value="pop" />
+            Pop
+            <input type="radio" name="genre" value="jazz"/>
+            Jazz
+        </p>
+    </form>
+<hr>
+    <h1>Checkboxes:</h1>
+    <form action="http:www.example.org/profle.php">
+        <p>Please select your favorite music service(s):
+            <br>
+        <input type="checkbox" name="service" 
+        value="itunes" checked="checked" />Itunes
+        <input type="checkbox" name="service" value="lastfm" />
+        Last.fm
+        <input type="checkbox" name="service" value="spotify">
+        Spotify
+        </p>
+    </form>
+
+    <hr>
+
+    <h1>Drop Down List:</h1>
+    <form action="www.example.org/profle.php">
+    <p>What device do you listen to music on?:</p>
+    <select name="Devices">
+        <option value="ipod">Ipod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+    </select>
+    </form>
+<hr>
+
+<h1>Multiple Select Box:</h1>
+    <form action="www.example.org/profile.php">
+      <select name="instruments" size="4"
+      multiple="multiple">
+      <option value="guitar" selected="selected">Guitar</option>
+     <option value="drums">Drums</option>
+     <option value="keyboards">Keyboards</option>
+     <option value="bass" selected="selected">Bass</option>
+    </select>
+    </form>
+    <hr>
+    <h1>File Input Box:</h1>
+    <form action="http:www.example.org/upload.php" method="post">
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song"><br>
+        <input type="submit" value="upload">
+    </form>
+    <hr>
+    <h1>Submit Button</h1>
+    <form action="http:www.example.com/subscribe">
+        <p>Subsribe to our email list.</p>
+        <input type="text" name="email">
+        <input type="submit" value="Subscribe"> 
+    </form>
+<hr>
+<h1>Image Button</h1>
+    <form action="https:www.example.org/subscribe.php">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email">
+        <input type="image" img src="images/subscribe.jpg" 
+        width="100" height="20">
+    </form>
 </body>
 </html>
