@@ -251,10 +251,14 @@ agent, an accountant, a dentist, an architect, a druggist who had come from
 Indianapolis to New York to take the course, a lawyer who had come from Havana
 in order to prepare himself to give one important three-minute speech.
 <p><a href="#top">Top</a></p>
+
+
 <!--IMAGES -->
 <h1>THE COLONY, TX:</h1>
 <img src="images/thecolony.jpg" alt="The Colony" height="450" width="600">
-<p>Below is how you add a caption:</p>
+<p>Below is how you add a caption: The height is 450 and the width is 600</p>
+
+<h1>Figcaption</h1>
 <figure>
     <img src="images/Frisco.jpg" width="600" height="450">
     <br>
@@ -296,7 +300,7 @@ in order to prepare himself to give one important three-minute speech.
     <td>$675</td>
 </table>
 
-<h1>Spanning Rows:</h1>
+<h1>Spanning Columns:</h1>
 <table>
     <tr>
         <th></th>
@@ -316,13 +320,13 @@ in order to prepare himself to give one important three-minute speech.
     <td>Home Ec</td>
 </table>
 
-<h1>Spanning Rows</h1>
+<h1>Spanning Rows:</h1>
 <table>
     <tr>
     <th></th>
     <th>ABC</th>
     <th>BBC</th>
-    <th>CNN</th>
+    <th>CNN</th><Figcaption></Figcaption>
     </tr>
     <tr>
         <th>6pm-7pm</th>
@@ -526,19 +530,101 @@ in order to prepare himself to give one important three-minute speech.
         <input type="submit" value="upload">
     </form>
     <hr>
-    <h1>Submit Button</h1>
+    <h1>Submit Button:</h1>
     <form action="http:www.example.com/subscribe">
         <p>Subsribe to our email list.</p>
         <input type="text" name="email">
         <input type="submit" value="Subscribe"> 
     </form>
 <hr>
-<h1>Image Button</h1>
+<h1>Image Button:</h1>
     <form action="https:www.example.org/subscribe.php">
         <p>Subscribe to our email list:</p>
         <input type="text" name="email">
         <input type="image" img src="images/subscribe.jpg" 
         width="100" height="20">
     </form>
+<br>
+<hr>
+    <!-- Labels -->
+
+<h1>Labeling Form Controls:</h1>
+
+    <label> Age: <input type="text" name="age"></label>
+    <br>
+    Gender:
+    <input id="female" type="radio" name="gender">
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender">
+    <label for="male">Male</label>
+<br>
+<hr>
+
+<h1>Grouping Form Elements</h1>
+<fieldset>
+    <legend>Contact Details</legend>
+    <label>Email:<br>
+    <input type="text" name="email"></label><br>
+    <label>Mobile:<br>
+    <input type="text" name="mobile"></label><br>
+    <label>Telephone:<br>
+    <input type="text" name="telephone"></label>
+</fieldset>
+
+<br>
+<hr>
+
+<h1>Form Validation:</h1>
+<form action="http:www.example.org/login.php">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required="required"><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required="required"><br>
+    <input type="submit" value="submit"/>
+</form>
+<br>
+<hr>
+
+<h1>Date Input:</h1>
+<form action="https:www.example.org/bookings.com">
+    <label for="username">Departure Date:</label>
+    <input type="date" name="depart">
+    <input type="submit" value="submit">
+</form>
+
+<br>
+<hr>
+<h1>EMAIL INPUT:</h1>
+
+<form action="https:www.example.org/subscribe">
+    <p>Please Enter your email address:</p>
+    <input type="email" name="email">
+    <input type="submit" value="submit">
+</form>
+
+<hr>
+<br>
+
+<h1>SEARCH INPUT:</h1>
+<form action="https:www.example.org/search.php">
+    <input type="search" name="search">
+    <input type="submit" name="search">
+</form>
+<hr>
+<br>
+
+<h1>URL INPUT:</h1>
+
+<form action="https:www.example.com/profile">
+  <p>Please Enter your Website address:</p>
+ <input type="url" name="website">
+ <input type="submit" value="submit">
+</form>
+
+<iframe 
+width="600"
+height="450"
+src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53502.15975413154!2d-96.82980321340322!3d33.05949472777843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x864c19da0ede14b1%3A0xcc504b659dc62cb9!2s7101%20Chase%20Oaks%20Blvd%2C%20Plano%2C%20TX%2075025-5908%2C%20USA!3m2!1d33.0727265!2d-96.6954552!4m5!1s0x864c251f65bd6c9b%3A0x861db71e4aa5700b!2sLakewood%20Hills%20by%20Pulte%20Homes%2C%203244%20Lakewood%20Hills%20Dr%2C%20Lewisville%2C%20TX%2075056!3m2!1d33.0526984!2d-96.8859378!5e0!3m2!1sen!2sus!4v1685667050737!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 </body>
 </html>
