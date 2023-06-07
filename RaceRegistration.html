@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Race Registration Form</title>
+</head>
+<body>
+<h1>Race Registration!</h1>
+<form action="https://www.example.com/profile.php">
+    <div>
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname"  
+     required="required">
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" required="required">
+    </div>
+
+    <div>
+     <p>Select a Race:</p>
+     </div>
+
+     <div>
+    <input type="radio" name="race" id="Funrun" value="funrun">
+    <label for="funrun5k">Fun Run 5k</label>
+    </div>
+
+    <div>
+    <input type="radio" name="race" id="half" value="half">
+    <label for="halfmarathon">Half Marathon</label>
+    </div>
+
+    <div>
+    <input type="radio" name="race" id="full" value="full">
+    <label for="fullmarathon">Full Marathon</label>
+    </div>
+
+     <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    </div>
+
+
+     <div>
+    <label for="age">Select Age Group</label>
+    <select name="division  " id="division">
+        <option value="18-30">18-30</option>
+        <option value="30-50">30-50</option>
+        <option value="50+">50+</option>
+    </select>
+    </div>
+    <button>Register</button>
+</form>
+</body>

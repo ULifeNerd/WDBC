@@ -3,7 +3,7 @@
     <title>This is Practice</title>
 </head>
 <body>
-
+<main>
     <!-- Headings -->
     <h1>This Practice</h1>
     <h2>This Practice</h2>
@@ -76,6 +76,7 @@
 <p>I had the <ins>worst</ins> <del>best</del> night of my life. </p>
 
 <!--List-->
+
 <ol>
     <li>Chips</li>
     <li>HotDogs</li>
@@ -111,38 +112,46 @@
         <li>Tarts</li>
     </li>
 </ul>
-
 <!--Linking to Other Sites-->
 
 <p>Movie Reviews:</p>
+
+<nav>
 <ul>
     <li><a href="https://www.youtube.com/">Youtube</a></li>
     <li><a href="https://www.google.com/">Google</a></li>
     <li><a href="https://www.udemy.com/">Udemy</a></li>
     <li><a href="https://stackoverflow.com/">Stackoverflow</a></li>
 </ul>
+</nav>
 
 <!--Linking to other pages on the same site-->
 <p>Linking to other pages on the same site:</p>
+<nav>
 <ul>
     <li><a href="practice.html">Home</a></li>
     <li><a href="about-us.html">About</a></li>
     <li><a href="movies.html">Movies</a></li>
     <li><a href="contact.html">Contact</a></li>
 </ul>
+</nav>
 
 <!--Opening Link in New Window-->
+<nav>
 <p>Open Link in New Window:</p>
 <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-
+</nav>
 
 <!--Link to specific Part of Same Page-->
 
+<nav>
 <h1 id="#top">Film-Making Terms</h1>
 <a href="#arc_shot">Arc_Shot</a><br>
 <a href="#Interlude">Interlude</a><br>
 <a href="#prologue">Prologue</a>
+</nav>
 
+<section>
 <h2 id="arc_shot">Arc-Shot</h2>
 <p>The advertisement in the New York Sun promised that the meeting would be highly
     entertaining. It was. Eighteen people who had taken the course were marshaled in
@@ -178,6 +187,8 @@
     agent, an accountant, a dentist, an architect, a druggist who had come from
     Indianapolis to New York to take the course, a lawyer who had come from Havana
     in order to prepare himself to give one important three-minute speech.</p>
+</section>
+<section>
 <h2 id="Interlude">Interlude</h2>
 The advertisement in the New York Sun promised that the meeting would be highly
 entertaining. It was. Eighteen people who had taken the course were marshaled in
@@ -215,6 +226,9 @@ executive, a baker, the president of a trade association, two bankers, an insura
 agent, an accountant, a dentist, an architect, a druggist who had come from
 Indianapolis to New York to take the course, a lawyer who had come from Havana
 in order to prepare himself to give one important three-minute speech.
+</section>
+
+<section>
 <h2 id="prologue">Prologue</h2>
 The advertisement in the New York Sun promised that the meeting would be highly
 entertaining. It was. Eighteen people who had taken the course were marshaled in
@@ -251,6 +265,7 @@ agent, an accountant, a dentist, an architect, a druggist who had come from
 Indianapolis to New York to take the course, a lawyer who had come from Havana
 in order to prepare himself to give one important three-minute speech.
 <p><a href="#top">Top</a></p>
+</section>
 
 
 <!--IMAGES -->
@@ -505,9 +520,9 @@ in order to prepare himself to give one important three-minute speech.
     <form action="www.example.org/profle.php">
     <p>What device do you listen to music on?:</p>
     <select name="Devices">
-        <option value="ipod">Ipod</option>
-        <option value="radio">Radio</option>
-        <option value="computer">Computer</option>
+        <option id="ipod">Ipod</option>
+        <option id="radio">Radio</option>
+        <option id="computer">Computer</option>
     </select>
     </form>
 <hr>
@@ -516,10 +531,10 @@ in order to prepare himself to give one important three-minute speech.
     <form action="www.example.org/profile.php">
       <select name="instruments" size="4"
       multiple="multiple">
-      <option value="guitar" selected="selected">Guitar</option>
-     <option value="drums">Drums</option>
-     <option value="keyboards">Keyboards</option>
-     <option value="bass" selected="selected">Bass</option>
+      <option id="guitar" selected="selected">Guitar</option>
+     <option id="drums">Drums</option>
+     <option id="keyboards">Keyboards</option>
+     <option id="bass" selected="selected">Bass</option>
     </select>
     </form>
     <hr>
@@ -527,14 +542,14 @@ in order to prepare himself to give one important three-minute speech.
     <form action="http:www.example.org/upload.php" method="post">
         <p>Upload your song in MP3 format:</p>
         <input type="file" name="user-song"><br>
-        <input type="submit" value="upload">
+        <input type="submit" id="upload">
     </form>
     <hr>
     <h1>Submit Button:</h1>
     <form action="http:www.example.com/subscribe">
         <p>Subsribe to our email list.</p>
         <input type="text" name="email">
-        <input type="submit" value="Subscribe"> 
+        <input type="submit" id="Subscribe"> 
     </form>
 <hr>
 <h1>Image Button:</h1>
@@ -580,7 +595,7 @@ in order to prepare himself to give one important three-minute speech.
     <input type="text" name="username" required="required"><br>
     <label for="password">Password:</label>
     <input type="password" name="password" required="required"><br>
-    <input type="submit" value="submit"/>
+    <input type="submit" id="submit"/>
 </form>
 <br>
 <hr>
@@ -589,7 +604,7 @@ in order to prepare himself to give one important three-minute speech.
 <form action="https:www.example.org/bookings.com">
     <label for="username">Departure Date:</label>
     <input type="date" name="depart">
-    <input type="submit" value="submit">
+    <input type="submit" id="submit">
 </form>
 
 <br>
@@ -599,7 +614,7 @@ in order to prepare himself to give one important three-minute speech.
 <form action="https:www.example.org/subscribe">
     <p>Please Enter your email address:</p>
     <input type="email" name="email">
-    <input type="submit" value="submit">
+    <input type="submit" id="submit">
 </form>
 
 <hr>
@@ -618,14 +633,16 @@ in order to prepare himself to give one important three-minute speech.
 <form action="https:www.example.com/profile">
   <p>Please Enter your Website address:</p>
  <input type="url" name="website">
- <input type="submit" value="submit">
+ <button>Submit</button>
 </form>
 <br>
+
 <iframe 
 width="600"
 height="450"
 src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53502.15975413154!2d-96.82980321340322!3d33.05949472777843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x864c19da0ede14b1%3A0xcc504b659dc62cb9!2s7101%20Chase%20Oaks%20Blvd%2C%20Plano%2C%20TX%2075025-5908%2C%20USA!3m2!1d33.0727265!2d-96.6954552!4m5!1s0x864c251f65bd6c9b%3A0x861db71e4aa5700b!2sLakewood%20Hills%20by%20Pulte%20Homes%2C%203244%20Lakewood%20Hills%20Dr%2C%20Lewisville%2C%20TX%2075056!3m2!1d33.0526984!2d-96.8859378!5e0!3m2!1sen!2sus!4v1685667050737!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 </iframe>
+
 <br>
 <video src="videos/Soulful House .mp4"
 width="400" height="300"
@@ -634,5 +651,21 @@ preload="auto"
 controls
 loop>
 </video>
+
+<h1>COLE STEELE LABELS</h1>
+
+<form action="https://www.example.org/profile.php">
+    <label for="username">Username</label>
+    <input type="text" id="username" maxlength="30" size="15"
+    placeholder="Username"><br>
+    <label for="password">Password</label>
+    <input type="password" id="password" maxlength="30" size="15"
+    placeholder="Password"><br>
+   <button>Submit</button>
+
+
+
+</form>
+</main>
 </body>
 </html>
